@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'first_widget.dart';
+import 'assets_media.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Praktikum Mobile Lanjut',
+      debugShowCheckedModeBanner: false,
+      title: 'Assets Media',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        fontFamily: 'Poppins',
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF4D63D9),
+        ),
       ),
-      home: const FirstWidget(),
+      home: const AssetsMediaPage(),
     );
   }
 }
